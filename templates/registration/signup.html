@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h3>ユーザー登録</h3>
+
+{% if initial %}
+<p>お住まいの地域を選択して下さい</p>
+<form method='POST'>
+{% csrf_token %}
+<div>
+<label for='{{ form.prefecture.id_for_label }}'>{{ form.prefecture.label_tag }}</label>
+{{ form.prefecture }}
+{{ form.prefecture.errors }}
+</div>
+<input type='hidden' name='button' value='choice'>
+<button class='btn btn-primary' type='submit'>選択</button>
+</form>
+
+{% else %}
+
+<form method='POST' enctype="multipart/form-data">
+{% csrf_token %}
+{% for field in form %}
+<div>
+<label for='{{ field.id_for_label }}'>{{ field.label_tag }}</label>
+{{ field }}
+{{ field.errors }}
+</div>
+{% endfor %}
+<input type='hidden' name='button' value='register'>
+<button class='btn btn-primary' type='submit' style='float:left;'>登録</button>
+</form>
+<a class='btn btn-secondary' href="{% url 'accounts:signup' %}" style='float:left;'>戻る</a>
+{% endif %}
+
+{% endblock %}

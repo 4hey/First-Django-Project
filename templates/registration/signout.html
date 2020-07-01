@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h3>本当に退会されますか？</h3>
+<form method='post'>
+{% csrf_token %}
+<button class='btn btn-danger' type='submit'>退会</button>
+</form>
+<a href="{% url 'weatherapp:home' %}">Homeに戻る</a>
+{% endblock %}

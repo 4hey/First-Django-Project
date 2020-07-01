@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<br>
+<div class='row justify-content-start'>
+  <h5 class='offset-md-1 offset-0'>今日の<span style='color: red;'>{{ city }}（{{ prefecture }}）</span>の天気：</h5>
+  <h5>{{ todays_weather }}</h5>
+</div>
+<div class='row justify-content-start align-items-center'>
+  <div class='week-weather col-xl-6 col-md-10 offset-md-1 offset-0'>
+  <div class='table-responsive'>
+  <table class='table text-nowrap' width='800' border='1' cellpadding="10">
+  <caption style='caption-side: top; font-size:20px; color:orange;'>一週間の天気</caption>
+
+    <thead>
+    <tr>
+    {% for i in days %}
+      <th style='text-align:center;'>{{ i }}</th>
+    {% endfor %}
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+    {% for i in weather %}
+      <td style='text-align:center;'>{{ i }}</td>
+    {% endfor %}
+    </tr>
+    </tbody>
+
+  </table>
+  </div>
+  </div>
+  <div class='month_calendar col-xl-3 offset-md-1 offset-0' height= 600 width=300 sytle='float: left;'>
+    <a href="{% url 'weatherapp:home' %}?pre={{ indicative_month }}&year={{ indicative_year }}">　<<　</a>
+    <a href='#'>{{ indicative_year }}年{{ indicative_month }}月</a>
+    <a href='{% url "weatherapp:home" %}?post={{ indicative_month }}&year={{ indicative_year }}'>　>>　</a>
+    <table border="1" width=300 cellspacing="0" cellpadding="5">
+      <tr>
+      {% for weekday in weekdays %}
+        <th height=15>
+          {{ weekday }}
+        </th>
+      {% endfor %}
+      </tr>
+
+      {% for week in week_list %}
+        <tr>
+        {% for day in week %}
+          {% if indicative_year == current_year and indicative_month == current_month and day == current_day %}
+          <td bgcolor='#ccf8ff' height=30>
+          {% else %}
+          <td height=30>
+          {% endif %}
+            {% if day != 0 %}
+              <a href="{% url 'weatherapp:home' %}?day={{ day }}&month={{ indicative_month }}&year={{ indicative_year }}">{{ day }}</a>
+            {% endif %}
+          </td>
+        {% endfor %}
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+
+<br>
+
+
+<div class='week_calendar row justify-content-start'>
+<div class='col-md-10 col-12 offset-md-1 offset-0 table-responsive'>
+  <div class='w-100'></div>
+  <table class='table text-nowrap' border="1" cellpadding="5">
+  <caption style='caption-side:top; font-size:20px; color:orange;'>週間スケジュール</caption>
+
+  <thead>
+  <tr>
+  {% for weekday in weekdays %}
+    <th style='text-align:center;'>
+      {{ weekday }}
+    </th>
+  {% endfor %}
+  </tr>
+  </thead>
+
+  <tbody>
+  {% for week in week_list %}
+  <tr>
+  {% if indicative_day in week %}
+  {% for day in week %}
+    <td>
+      {% if day != 0 %}
+        <p>{{ day }}</p>
+        <br>
+        {% for schedule in month_schedule %}
+        {% if schedule.day == day %}
+        <p>{{ schedule.get_start_display }} - {{ schedule.get_end_display }}</p>
+        <p class='font-weight-bold'>{{ schedule.title | truncatechars:10 }}</p>
+        <a href='{% url "weatherapp:detail" schedule.id %}'>詳細</a>
+        <br>
+        <br>
+        {% endif %}
+        {% endfor %}
+        <br>
+        <br>
+          <a class='btn btn-primary' href='{% url "weatherapp:create" %}?day={{ day }}&month={{ indicative_month }}&year={{ indicative_year }}' style='color:white;'>追加</a>
+      {% endif %}
+    </td>
+  {% endfor %}
+  {% endif %}
+  </tr>
+  {% endfor %}
+  </tbody>
+  </table>
+</div>
+</div>
+
+{% endblock %}

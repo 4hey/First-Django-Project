@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e0dc751-3e66-4bd8-b0dd-3050a23bbf91" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="ProjectId" id="1ZFpfxauB88DyVjU0kpHhINWKXh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="weather" type="Python.DjangoServer" factoryName="Django server">
+      <module name="weather" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="weather.settings" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e0dc751-3e66-4bd8-b0dd-3050a23bbf91" name="Default Changelist" comment="" />
+      <created>1584444803355</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584444803355</updated>
+      <workItem from="1584444815917" duration="462000" />
+      <workItem from="1585060457314" duration="43000" />
+      <workItem from="1585060509923" duration="1846000" />
+      <workItem from="1585364986988" duration="62000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="304" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585082120551">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state x="304" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.951@0.23.1680.951" timestamp="1585082120551" />
+    <state x="667" y="400" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1584445260509">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state x="667" y="400" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.23.1680.951@0.23.1680.951" timestamp="1584445260509" />
+    <state x="531" y="107" key="#weather" timestamp="1585082606420">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state x="531" y="107" key="#weather/0.23.1680.951@0.23.1680.951" timestamp="1585082606420" />
+    <state width="1638" height="254" key="GridCell.Tab.0.bottom" timestamp="1585085156469">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state width="1638" height="254" key="GridCell.Tab.0.bottom/0.23.1680.951@0.23.1680.951" timestamp="1585085156469" />
+    <state width="1638" height="254" key="GridCell.Tab.0.center" timestamp="1585085156468">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state width="1638" height="254" key="GridCell.Tab.0.center/0.23.1680.951@0.23.1680.951" timestamp="1585085156468" />
+    <state width="1638" height="254" key="GridCell.Tab.0.left" timestamp="1585085156468">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state width="1638" height="254" key="GridCell.Tab.0.left/0.23.1680.951@0.23.1680.951" timestamp="1585085156468" />
+    <state width="1638" height="254" key="GridCell.Tab.0.right" timestamp="1585085156468">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state width="1638" height="254" key="GridCell.Tab.0.right/0.23.1680.951@0.23.1680.951" timestamp="1585085156468" />
+    <state width="1638" height="314" key="GridCell.Tab.1.bottom" timestamp="1585085156466">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state width="1638" height="314" key="GridCell.Tab.1.bottom/0.23.1680.951@0.23.1680.951" timestamp="1585085156466" />
+    <state width="1638" height="314" key="GridCell.Tab.1.center" timestamp="1585085156465">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state width="1638" height="314" key="GridCell.Tab.1.center/0.23.1680.951@0.23.1680.951" timestamp="1585085156465" />
+    <state width="1638" height="314" key="GridCell.Tab.1.left" timestamp="1585085156465">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state width="1638" height="314" key="GridCell.Tab.1.left/0.23.1680.951@0.23.1680.951" timestamp="1585085156465" />
+    <state width="1638" height="314" key="GridCell.Tab.1.right" timestamp="1585085156465">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state width="1638" height="314" key="GridCell.Tab.1.right/0.23.1680.951@0.23.1680.951" timestamp="1585085156465" />
+    <state width="239" height="498" key="HiddenNamespacesPopup" timestamp="1585082861619">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state width="239" height="498" key="HiddenNamespacesPopup/0.23.1680.951@0.23.1680.951" timestamp="1585082861619" />
+    <state x="126" y="148" key="SettingsEditor" timestamp="1585083018188">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state x="126" y="148" key="SettingsEditor/0.23.1680.951@0.23.1680.951" timestamp="1585083018188" />
+    <state x="487" y="330" key="com.intellij.ide.util.TipDialog" timestamp="1585364990215">
+      <screen x="0" y="23" width="1680" height="951" />
+    </state>
+    <state x="487" y="330" key="com.intellij.ide.util.TipDialog/0.23.1680.951@0.23.1680.951" timestamp="1585364990215" />
+    <state x="505" y="233" key="search.everywhere.popup" timestamp="1584444975551">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1584444975551" />
+  </component>
+</project>

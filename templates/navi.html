@@ -1,0 +1,32 @@
+{% load static %}
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light"  style='background-color:#80eeff'>
+  <a href="{% url 'weatherapp:home' %}" class='navbar-brand' style='font-size:30pt; color:white;'>
+    <img src='{% static "sun.png" %}' width='50' height='50'>
+    Weatherapp
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav mr-auto">
+      {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:detail' user.id %}"  style='color:white; padding:10px;'>{{ user.username }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'logout' %}"  style='color:white; padding:10px;'>ログアウト</a>
+        </li>
+      {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}" style='color:white; padding:10px;'>ログイン</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'accounts:signup' %}" style='color:white; padding:10px;'>新規登録</a>
+        </li>
+          {% endif %}
+      </ul>
+    </div>
+</nav>

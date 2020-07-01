@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<form method='POST' enctype="multipart/form-data">
+{% csrf_token %}
+{% for field in form %}
+<div>
+<label for='{{ field.id_for_label }}'>{{ field.label_tag }}</label>
+{{ field }}
+{{ field.errors }}
+</div>
+{% endfor %}
+<input type='hidden' name='button' value='register'>
+<button class='btn btn-primary' type='submit'>更新</button>
+</form>{% endblock %}

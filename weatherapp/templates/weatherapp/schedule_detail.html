@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<br>
+<div class='row justify-content-start'>
+<table class='col-xl-5 col-lg-8 col-md-10 col-sm-11 col-12 offset-md-1 offset-0'>
+  <tr>
+    <th class='text-nowrap'><label for="id_title">タイトル：</label></th>
+    <td><p id="id_title">{{object.title}}</p></td>
+  </tr>
+  <tr>
+    <th class='text-nowrap'><label for="id_time">時間：</label></th>
+    <td><p id="id_time">{{ schedule.get_start_display }} - {{ schedule.get_end_display }}</p></td>
+  </tr>
+  <tr>
+    <th class='text-nowrap'><label for="id_detail">詳細：</label></th>
+    <td><p id="id_detail">{{object.detail}}</p></td>
+  </tr>
+</table>
+</div>
+
+<div class='row justify-content-start'>
+<div class='offset-md-1 offset-0'>
+<a class='btn btn-primary' href='{% url "weatherapp:update" object.id %}'>編集</a>
+<a class='btn btn-danger' href='{% url "weatherapp:delete" object.id %}'>削除</a>
+</div>
+</div>
+
+{% endblock %}

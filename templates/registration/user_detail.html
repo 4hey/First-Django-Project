@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<img class='round-circle' src='{{ user.icon.url }}' style='width:200px;'>
+<table>
+    <tbody>
+        <tr>
+            <th>ユーザー名</th>
+            <td>{{ user.username }}</td>
+        </tr>
+        <tr>
+            <th>email</th>
+            <td>{{ user.email }}</td>
+        </tr>
+    </tbody>
+</table>
+{% if user.is_authenticated %}
+<a href="{% url 'accounts:update' user.pk %}" class='btn btn-primary'>編集</a>
+<a href="{% url 'password_change' %}" class='btn btn-secondary'>パスワード変更</a>
+<a href="{% url 'accounts:signout' user.pk %}" class='btn btn-danger'>退会</a>
+{% endif %}
+{% endblock %}
